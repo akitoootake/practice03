@@ -1,0 +1,408 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(https://prog-8.com/images/html/advanced/top.png);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+  cursor:pointer;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fab {
+  margin-right: 5px;
+  font-size:16px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
+}
+
+.header-left {
+  float: left;
+}
+
+#top-btn{
+  cursor:pointer;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right .none, .sign, .login{
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+  cursor:pointer;
+}
+
+.header-right .none:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-right .sign:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-right .login:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*モーダル*/
+.menuicon-wrapper{
+  position:fixed;
+  top:65px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display:none;
+  z-index:100;
+  background-color:rgba(0,0,0,0.8);
+}
+
+.fa-times-circle{
+  position:absolute;
+  top:20px;
+  right:25px;
+  font-size:25px;
+  color:rgba(255,255,255,0.4);
+  cursor:pointer;
+}
+
+.fa-times-circle:hover{
+  color:rgba(255,255,255,1)
+}
+
+.h3s{
+  cursor:pointer;
+  color:rgba(255,255,255,0.7);
+  text-align:center;
+}
+
+.lessoncopy{
+  margin-top:80px;
+  margin-bottom:30px;
+  border-bottom:2px solid rgba(255,255,255,0.6);
+}
+
+.lessoncopy:hover{
+  color:rgba(255,255,255,1);
+  border-bottom:2px solid rgba(255,255,255,1);
+}
+
+#signupcopy{
+  border-bottom:2px solid rgba(255,255,255,0.6);
+  margin-bottom:30px;
+}
+
+#signupcopy:hover{
+  color:rgba(255,255,255,1);
+  border-bottom:2px solid rgba(255,255,255,1);
+}
+
+#logincopy{
+  border-bottom:2px solid rgba(255,255,255,0.6);
+}
+
+#logincopy:hover{
+  border-bottom:2px solid rgba(255,255,255,1);
+  color:rgba(255,255,255,1)
+}
+
+
+.signup-modal-wrapper, .login-modal-wrapper{
+  display:none;
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  background-color:rgb(0,0,0,0.6);
+  z-index:100;
+}
+
+.modal{
+  position:absolute;
+  top:20%;
+  left:30%;
+  right:30%;
+  background-color:#e6ecf0;
+  padding:20px 0 40px;
+  border-radius:10px;
+  height:auto;
+  text-align:center;
+}
+
+.fa-times{
+  position:absolute;
+  top:12px;
+  right: 12px;
+  color:rgba(128, 128, 128, 0.46);
+  cursor:pointer;
+}
+
+#signup-form, #login-form{
+  width:100%;
+}
+
+#signup-form h2, #login-form h2{
+  color:#5f5d60;
+  letter-spacing:1px;
+  margin-bottom:40px;
+}
+
+#signup-form input, #login-form input{
+  width: 95%;
+  margin-bottom: 20px;
+  font-size:12px;
+  padding:12px;
+  border:1px solid #d0d5d8;
+  border-radius:5px;
+}
+
+#submit-btn{
+  display:inline-block;
+  width:96%;
+  padding:14px;
+  background-color:#5dca88;
+  border:none;
+  border-radius:3px;
+  color:white;
+  margin:10px auto;
+  cursor:pointer;
+}
+
+.lesson-wrapper {
+  height:630px;
+  padding-bottom: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 37%;
+  width: 100%;
+  color: white;
+}
+
+.text-contents{
+  width: 80%;
+  margin:5% auto;
+  font-size: 13px;
+  color: #b3aeb5;
+  display:none;
+}
+
+.text-active{
+  display:block;
+}
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+.heading h3{
+  font-weight:normal;
+}
+
+
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.menu-icon {
+  color:rgba(255,255,255,0.9);
+  float: right;
+  font-size: 25px;
+  padding: 12px 8px;
+  display:none;
+  cursor:pointer;
+}
+
+.menu-icon:hover{
+  color:rgba(255,255,255,1)
+}
+
+/* float: left; を解除 */
+.clear {
+  clear: left;
+}
+
+.faq-wrapper{
+  background-color:#e6ecf0;
+  text-align:center;
+  color:#5f5d60;
+  padding-bottom:80px;
+}
+
+.faq-title h2{
+  margin:auto;
+  padding:45px;
+  font-weight:normal;
+}
+
+#faq-list{
+  list-style:none;
+  width:45%;
+  margin:0 auto;
+  padding:0;
+}
+
+.faq-list-item{
+  margin:10px;
+  border-bottom:1px solid #ccc;
+  position:relative;
+  cursor:pointer;
+  text-align:left;
+}
+
+.faq-list-item h3{
+  font-size:14px;
+}
+
+.faq-list-item span{
+  position:absolute;
+  top:0;
+  right:5px;
+  color:#ccc;
+  font-size:13px;
+}
+
+.answer{
+  font-size:12px;
+  padding:5px 0px;
+  margin-bottom:15px;
+  display:none;
+}
+
+
+
+
+
+
+

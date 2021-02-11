@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice03</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-left" id="top-btn">
+          <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
+        </div>
+
+        <!-- モバイル用のヘッダーのメニューアイコン -->
+        <span class="menu-icon">
+          <i class="fas fa-bars"></i>
+        </span>
+
+        <div class="header-right">
+          <div class="none scroll">レッスン</div>
+          <div class="sign signup-show">新規登録</div>
+          <div class="login login-show">ログイン</div>
+        </div>
+      </div>
+    </header>
+    <div class="menuicon-wrapper" id="menuicon-list">
+      <div class="menuicon-close">
+      　 <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="h3s"> 
+      　 <h3 class="lessoncopy scroll">レッスン</h3>
+      　 <h3 id="signupcopy" class="signup-show">新規登録</h3>
+      　 <h3 id="logincopy" class="login-show">ログイン</h3>
+      </div>
+    </div>
+    <div class="signup-modal-wrapper" id="signup-modal">
+      <div class="modal">
+        <div class="close-modal">
+          <i class="fas fa-times"></i>
+        </div>
+        <div id="signup-form">
+          <h2>Emailで新規登録</h2>
+          <form action="#">
+            <input class="form-control" type="text" placeholder="メールアドレス">
+            <input class="form-control" type="password" placeholder="パスワード">
+            <div id="submit-btn">新規登録</div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="login-modal-wrapper" id="login-modal">
+      <div class="modal">
+        <div class="close-modal">
+          <i class="fas fa-times"></i>
+        </div>
+        <div id="login-form">
+          <h2>Emailログイン</h2>
+          <form action="#">
+            <input class="form-control" type="text" placeholder="メールアドレス">
+            <input class="form-control" type="password" placeholder="パスワード">
+            <div id="submit-btn">ログイン</div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="top-wrapper">
+      <div class="container">
+        <h1>LEARN TO CODE.</h1>
+        <h1>LEARN TO BE CREATIVE.</h1>
+        <p>Progateはオンラインプログラミング学習サービスです。</p>
+        <p>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
+        <div class="btn-wrapper">
+          <div class="btn signup signup-show">新規登録はこちら</div>
+          <p>or</p>
+          <div class="btn facebook"><i class="fab fa-facebook-f"></i>Facebookで登録</div>
+          <div class="btn twitter"><i class="fab fa-twitter"></i>Twitterで登録</div>
+        </div>
+      </div>
+    </div>
+    <div class="lesson-wrapper" id="scroll-jump">
+      <div class="container">
+        <div class="heading">
+          <h2>Learn Where to Get Started!</h2>
+        </div>
+        <div class="lessons">
+          <div class="lesson lesson-hover">
+            <div class="lesson-icon">
+              <img src="https://prog-8.com/images/html/advanced/html.png">
+              <p>HTML & CSS</p>
+            </div>
+            <h8 class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</h8>
+          </div>
+          <div class="lesson lesson-hover">
+            <div class="lesson-icon">
+              <img src="https://prog-8.com/images/html/advanced/jQuery.png">
+              <p>jQuery</p>
+            </div>
+            <h8 class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</h8>
+          </div>
+          <div class="lesson lesson-hover">
+            <div class="lesson-icon">
+              <img src="https://prog-8.com/images/html/advanced/ruby.png">
+              <p>Ruby</p>
+            </div>
+            <h8 class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</h8>
+          </div>
+          <div class="lesson lesson-hover">
+            <div class="lesson-icon">
+              <img src="https://prog-8.com/images/html/advanced/php.png">
+              <p>PHP</p>
+            </div>
+            <h8 class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</h8>
+          </div>
+        </div>
+        <!-- float: left; を解除 -->
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="faq-wrapper">
+      <div class="container">
+        <div class="faq-title">
+          <h2>FAQ</h2>
+        </div>
+        <div class="faq">
+          <ul id="faq-list">
+            <li class="faq-list-item">
+              <h3 class="question">Progateの公式キャラクターはなんですか？</h3>
+              <span>+</span>
+              <div class="answer">
+                <p>にんじゃわんこといいます。忍者の格好をしたわんこです。ネコではありません。</p>
+              </div>
+            </li>
+            <li class="faq-list-item">
+              <h3 class="question">にんじゃわんこはオスですか？それともメスですか？</h3>
+              <span>+</span>
+              <div class="answer">
+                <p>にんじゃわんこはオスです。</p>
+              </div>
+            </li>
+            <li class="faq-list-item">
+              <h3 class="question">にんじゃわんこは何歳ですか？</h3>
+              <span>+</span>
+              <div class="answer">
+                <p>にんじゃわんこは14歳です。</p>
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+    <div class="message-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
+          <h3>Let's learn to code, learn to be creative!</h3>
+        </div>
+        <a href="https://prog-8.com/" class="btn message">さっそく開発する</a>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
+        <p>Learn to code, learn to be creative.</p>
+      </div>
+    </footer>
+  </body>
+</html>
